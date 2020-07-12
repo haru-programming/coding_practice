@@ -3,39 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <title>クリスタ模写初級</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <div class="header__logo">
-        <h1>クリ★スタ</h1>
-      </div>
-      <div class="header__right">
-        <nav class="header__nav">
-          <ul>
-            <li>About</li>
-            <li>Service</li>
-            <li>Contents</li>
-          </ul>
-        </nav>
+    <header class="header">
+      <div class="wrapper">
+        <div class="container__top">
+          <div class="header__left”>
+            <h1 class="header__ttl">クリ★スタ</h1>
+          </div>
+          <div class="header__right">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item"><a href="#">Service</a></li>
+                <li class="nav__item"><a href="#">Contents</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="first-view__img">
-      <img src="../img/fv-bgi@2x.jpg" alt="" />
-      <div class="first-view__text">
-        <p>Cresta Design.</p>
+      <div class="first-view__img">
+        <img src="img/fv-bgi@2x.jpg" alt="" width="1296px" height="666px"/>
       </div>
-    </div>
+      <div class="first-view__text">
+        <p class="first-view__text-p">Cresta Design.</p>
+      </div>
     <!-- ここからメインコンテンツ -->
     <main>
       <!-- About -->
       <section class="main__about">
         <div class="wrapper">
-          <h2>About</h2>
+          <h2 class="main__ttl">About</h2>
           <p>
             近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
           </p>
@@ -44,7 +48,7 @@
       <!-- Service -->
       <section class="">
         <div class="wrapper">
-          <h2>Service</h2>
+          <h2 class="main__ttl">Service</h2>
           <div class="">
             <img class="" src="img/service-image@2x.jpg" />
             <div class="">
@@ -64,7 +68,7 @@
       <!-- News -->
       <section>
         <div class="wrapper">
-          <h2>News</h2>
+          <h2 class="main__ttl">News</h2>
           <div class="">
             <img class="" src="img/card-image1@2x.jpg" />
             <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
@@ -77,7 +81,7 @@
       <!-- お問い合わせ -->
       <section>
         <div class="wrapper">
-          <h2>お問い合わせ</h2>
+          <h2 class="main__ttl">お問い合わせ</h2>
           <label for="contact-text">担当者名</label>
           <input id="contact-text" type="text" name="name">
           <label for="contact-number">電話番号</label>
