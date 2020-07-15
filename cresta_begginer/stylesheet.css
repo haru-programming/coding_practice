@@ -4,7 +4,13 @@ body {
 }
 
 .wrapper {
-  margin: 0 120px 0 120px;
+  margin: 0 205px 0 205px;
+}
+
+.wrapper--small {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -27,6 +33,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 120px 0 120px;
 }
 
 .nav__list {
@@ -43,6 +50,7 @@ body {
 
 .nav__item {
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav__item + .nav__item {
@@ -52,7 +60,7 @@ body {
 .first-view__img {
   position: relative;
   max-width: 100%;
-  margin: 0 72px;
+  width: 100%;
 }
 
 .first-view__text {
@@ -72,11 +80,157 @@ body {
   margin-bottom: 0;
 }
 
+.main__about {
+  padding-top: 100px;
+}
+
 .main__ttl {
   text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main__lead {
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  margin: 0;
+}
+
+.main__content {
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 2.14em;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.main__service {
+  margin: 0;
+  padding-top: 150px;
+}
+
+.main__service--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+}
+
+.main__service--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.main__news {
+  margin: 0;
+  padding-top: 150px;
+}
+
+.main__ttl--fontJP {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding-top: 157px;
+  text-align: center;
+}
+
+.main__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 70px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.main__card--left, .main__card--center, .main__card--right {
+  -webkit-box-shadow: 0 0 6px 0 rgba(27, 19, 16, 0.4);
+          box-shadow: 0 0 6px 0 rgba(27, 19, 16, 0.4);
+  max-width: 320px;
+}
+
+.main__text {
+  padding: 25px 32px 25px 34px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.92;
+  font-size: 13px;
+}
+
+.service__lead {
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  margin: 0;
+}
+
+.service__content {
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 2.14em;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.service__text--top {
+  padding-left: 70px;
+}
+
+.service__text--bottom {
+  padding-right: 70px;
+}
+
+.contact__list {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  padding-top: 70px;
+}
+
+#contact__text, #contact__number, #contact__mail {
+  width: 100%;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contact__comment {
+  width: 100%;
+  height: 171px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-item + .form-item {
+  padding-top: 25px;
 }
 
 .footer {
   background-color: #1b1310;
+  height: 79px;
+}
+
+.footer__text {
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 31px;
+}
+
+.button {
+  margin-top: 50px;
+  text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
