@@ -1,6 +1,7 @@
 body {
   color: "#141414";
   margin: 0;
+  width: 100%;
 }
 
 .wrapper {
@@ -65,14 +66,17 @@ body {
 
 .first-view__text {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
   font-size: 50px;
   border: solid 2px white;
-  padding: 35px 42px;
+  padding: 15px 42px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 2.08em;
 }
 
 .first-view__text-p {
@@ -81,7 +85,7 @@ body {
 }
 
 .main__about {
-  padding-top: 100px;
+  padding-top: 92px;
 }
 
 .main__ttl {
@@ -99,27 +103,28 @@ body {
   letter-spacing: 0.1em;
   line-height: 2em;
   margin: 0;
+  padding-top: 63px;
 }
 
 .main__content {
   font-size: 14px;
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
-  line-height: 2.14em;
+  line-height: 2.16em;
   margin: 0;
-  padding-top: 45px;
+  padding-top: 26px;
 }
 
 .main__service {
   margin: 0;
-  padding-top: 150px;
+  padding-top: 160px;
 }
 
 .main__service--top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px;
+  padding-top: 72px;
 }
 
 .main__service--bottom {
@@ -159,32 +164,38 @@ body {
 }
 
 .main__text {
-  padding: 25px 32px 25px 34px;
+  padding: 2px 33px 25px 34px;
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.92;
   font-size: 13px;
 }
 
+.service {
+  width: 100%;
+}
+
 .service__lead {
   font-size: 24px;
   font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.11em;
   line-height: 2em;
   margin: 0;
+  padding-top: 12px;
 }
 
 .service__content {
   font-size: 14px;
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
-  line-height: 2.14em;
+  line-height: 2.17em;
   margin: 0;
-  padding-top: 45px;
+  padding-top: 26px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .service__text--top {
-  padding-left: 70px;
+  padding-left: 67px;
 }
 
 .service__text--bottom {
@@ -232,5 +243,19 @@ body {
 .button {
   margin-top: 50px;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.button--submit {
+  background-color: #1b1310;
+  -webkit-box-shadow: 0 0 6px #1b1310;
+          box-shadow: 0 0 6px #1b1310;
+  border-radius: 51px;
+  color: white;
+  width: 235px;
+  height: 59px;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px #141414;
 }
 /*# sourceMappingURL=stylesheet.css.map */
