@@ -12,6 +12,16 @@ $font-contact: "Hiragino Kaku Gothic ProN", sans-serif;
   max-width: 320px;
 }
 
+//レスポンシブ対応（スマホ）
+//ブレイクポイント
+$mb: 375px;
+//@mediaのフォーマット
+@mixin mobile {
+  @media screen and (max-width: $mb) {
+    @content;
+  }
+}
+
 body {
   color: $main-color;
   margin: 0;
@@ -66,6 +76,10 @@ body {
   }
 }
 
+.nav2 {
+  display: none;
+}
+
 .first-view {
   &__img {
     position: relative;
@@ -85,6 +99,9 @@ body {
     font-family: $font-main;
     letter-spacing: 0.05em;
     line-height: 2.08em;
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__text-p {

@@ -58,6 +58,10 @@ body {
   padding-left: 55px;
 }
 
+.nav2 {
+  display: none;
+}
+
 .first-view__img {
   position: relative;
   max-width: 100%;
@@ -77,6 +81,12 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05em;
   line-height: 2.08em;
+}
+
+@media screen and (max-width: 375px) {
+  .first-view__text {
+    font-size: 30px;
+  }
 }
 
 .first-view__text-p {
