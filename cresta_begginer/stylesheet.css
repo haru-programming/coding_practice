@@ -8,7 +8,7 @@ body {
   margin: 0 205px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     margin: 0 15px;
   }
@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .wrapper--small {
     margin: 0 15px;
   }
@@ -35,7 +35,7 @@ body {
   font-size: 26px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__ttl__left {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -56,9 +56,10 @@ body {
   margin: 0 120px 0 120px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .container__top {
     margin: 0;
+    margin-top: 2px;
     margin-left: 15px;
   }
 }
@@ -70,7 +71,7 @@ body {
   list-style: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__list {
     display: none;
   }
@@ -90,13 +91,108 @@ body {
   padding-left: 55px;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__toggle {
+    position: fixed;
+    z-index: 2;
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
+
+.nav__toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.nav__toggle i:nth-child(1) {
+  top: 0;
+}
+
+.nav__toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.nav__toggle i:nth-child(3) {
+  bottom: 0;
+}
+
 .nav2 {
-  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #1b1310;
+}
+
+.nav2__hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 64px;
+  height: 242px;
+}
+
+.nav2__item {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+.nav2__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav2__item + .nav2__item {
+  padding-top: 50px;
+}
+
+.nav2.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav__toggle.active {
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
 }
 
 .first-view {
   position: relative;
   width: 100%;
+}
+
+.first-view__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .first-view__text {
@@ -114,11 +210,13 @@ body {
   line-height: 2.08em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .first-view__text {
     font-size: 30px;
-    padding: 30px 40px;
+    padding: 17px 40px;
     white-space: nowrap;
+    top: 42.5%;
+    left: 51%;
   }
 }
 
@@ -127,7 +225,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main {
     width: 100%;
   }
@@ -146,6 +244,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  .main__ttl {
+    margin: 0 24px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__ttl--padding {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__ttl--padding2 {
+    margin: 0 17px 0 0;
+  }
+}
+
 .main__lead {
   font-size: 24px;
   font-family: "Noto Sans JP", sans-serif;
@@ -155,10 +271,10 @@ body {
   padding-top: 63px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__lead {
     font-size: 20px;
-    padding-top: 75px;
+    padding-top: 64px;
   }
 }
 
@@ -171,15 +287,16 @@ body {
   padding-top: 26px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__content {
-    padding-top: 34px;
+    padding-top: 15px;
+    letter-spacing: 0.048em;
   }
 }
 
 .main__service {
   margin: 0;
-  padding-top: 160px;
+  padding-top: 155px;
 }
 
 .main__service--top {
@@ -190,13 +307,13 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__service--top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 75px;
+    padding-top: 65px;
   }
 }
 
@@ -208,13 +325,13 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__service--bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 55px;
+    padding-top: 39px;
   }
 }
 
@@ -223,9 +340,12 @@ body {
   padding-top: 145px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__news {
     width: 100%;
+    padding-left: 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
@@ -248,7 +368,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -262,10 +382,10 @@ body {
   margin-right: 35px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__card--left {
     margin-bottom: 50px;
-    margin-right: 0;
+    margin-right: 11px;
   }
 }
 
@@ -273,10 +393,16 @@ body {
   margin-right: 35px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main__card--center {
-    margin-right: 0;
+    margin-right: 11px;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__card--right {
+    margin-right: 11px;
   }
 }
 
@@ -293,7 +419,13 @@ body {
   font-size: 13px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+  .main__text {
+    padding: 1px 42px 18px 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .service__left {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -305,10 +437,11 @@ body {
   padding-right: 69px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .service__img1 {
     padding: 0;
     padding-top: 40px;
+    max-height: 150px;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -324,9 +457,12 @@ body {
   padding-top: 13px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .service__lead {
     margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.099em;
+    padding-top: 0;
   }
 }
 
@@ -338,12 +474,15 @@ body {
   margin: 0;
   padding-top: 26px;
   font-family: "Noto Sans JP", sans-serif;
+  word-wrap: break-word;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .service__content {
     margin-bottom: 0;
-    padding-top: 34px;
+    padding-top: 15px;
+    letter-spacing: 0.042em;
+    line-height: 2.2em;
   }
 }
 
@@ -351,13 +490,14 @@ body {
   padding-left: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .service__img2 {
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 10px;
     width: 100%;
     max-width: 100%;
     height: auto;
+    max-height: 150px;
   }
 }
 
@@ -365,6 +505,7 @@ body {
   width: 100%;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .contact__list {
@@ -430,5 +571,11 @@ body {
   padding-bottom: 31px;
   font-size: 14px;
   letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__text {
+    padding-top: 20px;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */
