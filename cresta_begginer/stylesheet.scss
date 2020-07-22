@@ -134,13 +134,27 @@ body {
   bottom: 0;
 }
 
+//タップ後のハンバーガー
+//１つ目のspanを-45度にする
+.nav__toggle.active i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+//2番目と3番目のspanを45度に
+.nav__toggle.active i:nth-child(2) {
+  opacity: 0;
+}
+.nav__toggle.active i:nth-child(3) {
+  transform: translateY(-4px) rotate(45deg);
+}
+
 .nav2 {
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: 665px;
   transform: translateX(100vw);
   transition: all 0.3s;
   background-color: #1b1310;
@@ -150,11 +164,13 @@ body {
     flex-direction: column;
     width: 64px;
     height: 242px;
+    margin: 212px 156px 212px 155px;
   }
   &__item {
     font-size: 16px;
     font-family: $font-main;
     list-style: none;
+    text-align: center;
     & a {
       text-decoration: none;
       color: white;
@@ -168,12 +184,6 @@ body {
 
 .nav2.active {
   transform: translateX(0);
-}
-
-.nav__toggle.active {
-  font-size: 30px;
-  font-weight: normal;
-  color: white;
 }
 
 .first-view {
@@ -210,9 +220,6 @@ body {
   }
 }
 
-//--(スマホ)ハンバーガーメニュー
-
-//ここからメイン
 .main {
   @include mobile {
     width: 100%;
